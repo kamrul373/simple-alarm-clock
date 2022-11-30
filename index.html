@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alarm Clock</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="main">
+        <div class="clock">
+            <div class="time">
+                <h2 class="current-time" id="current-time">
+
+                </h2>
+            </div>
+            <div class="alarm-time" id="alarmTime">
+                <h2 class="setalaram">Set your alarm</h2>
+                <div class="alarmform">
+                    <select name="hours" id="hours">
+                        <option disabled selected>Hours</option>
+                    </select>
+                    <select name="minutes" id="minutes">
+                        <option disabled selected>Minutes</option>
+                    </select>
+                    <select name="seconds" id="seconds">
+                        <option disabled selected>Seonds</option>
+                    </select>
+                    <select name="ampm" id="ampm">
+                        <option value="AM">AM</option>
+                        <option value="PM">PM</option>
+                    </select>
+                    <button id="setAlarm" onclick="handleAlarm()">Set Alarm</button>
+                </div>
+                <div id="schedule">
+
+                </div>
+                <div class="snoze">
+                    <button id="snozer" onclick="snoze()" disabled>Snoze</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+
+</html>
